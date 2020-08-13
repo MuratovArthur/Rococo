@@ -1,0 +1,61 @@
+.navbar{
+    background-color: #262F34;
+    position: fixed; width:
+    100%; z-index: 1;
+}
+.navbar-brand{
+    padding-left: 2%;
+}
+.navbar-brand img{
+    width: 60px; height: auto; margin-right: 5px;
+}
+.navbar-brand .landing-h3{
+    display: inline;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
+}
+.header-text h1{
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
+}
+.header-text h2{
+    color: black;
+    font-family: 'Yeseva One', cursive;
+}
+.col-6 img{
+            max-width: 100%;
+        }
+.parallax {
+        background-image: url(./photos/banner.jpeg);
+        height: 460px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.header-text{
+    	padding-top: 140px;
+    	text-align: center;
+    }
+h1{
+    font-size: 6em;
+}
+
+    @media only screen and (max-width: 600px) {
+    h1{
+    	font-size: 3.5em;
+    }
+    h2{
+    	font-size: 1.8rem;
+    }
+    .parallax {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
