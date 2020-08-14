@@ -26,8 +26,8 @@
 .col-sm-3 img{
   max-width: 100%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 16%;
+  margin-bottom: 16%;
 
         }
 
@@ -39,8 +39,8 @@
 }
 .container-fluid {
     width: 100%;
-padding-right: 42px;
-    padding-left: 42px;
+    padding-right: 3%;
+    padding-left: 3%;
     margin-right: auto;
     margin-left: auto;
 
@@ -60,8 +60,19 @@ padding-right: 42px;
 h1{
     font-size: 6em;
 }
+.glow{
+  font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  position: absolute; bottom: 35%; max-width: 80%; left: 10%;
+}
 
-    @media only screen and (max-width: 600px) {
+
+
+
+
+
+    @media only screen and (max-width: 760px) {
     h1{
     	font-size: 3.5em;
     }
@@ -71,8 +82,19 @@ h1{
     .parallax {
         height: 400px;
     }
-}
+    .glow{
+  font-size: 30px;
+    }
+    .container-fluid {
+    padding-right: 5%;
+    padding-left: 5%;
+    }
+    .col-sm-3 img{
+  margin-top: 5%;
+  margin-bottom: 5%;
+    }
 
+}
 @media only screen and (max-width: 1366px) {
   .parallax {
     background-attachment: scroll;
