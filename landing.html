@@ -81,7 +81,7 @@
       <div class="carousel-item" id="pic4">
        <img src="./photos/ergonomy.jpg"  alt="..." >
        <div class="carousel-caption d-md-block">
-        <h3  class='glow'>Используем удобный интерфейс</h3>
+        <h3  class='glow' id="interface">Используем удобный интерфейс</h3>
         
        </div>
      </div>
@@ -92,7 +92,13 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+  
+if (window.matchMedia("(max-width: 400px)").matches) {
+  document.getElementById("interface").innerHTML = "Используем удобный и понятный интерфейс";
+} 
 
+</script>
 
 </body>
 

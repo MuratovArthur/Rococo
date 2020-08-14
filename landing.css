@@ -91,11 +91,11 @@ h1{
 }
 
 .glow{
-font-size: 27px;
+    font-size: 27px;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     position: absolute;
-    bottom: 35%;
+    bottom: 30px;
     max-width: 130%;
     width: 129%;
     left: -14%;
@@ -107,7 +107,7 @@ font-size: 27px;
     	font-size: 1.8rem;
     }
     .parallax {
-        height: 400px;
+        height: 330px;
     }
     .glow{
      
@@ -115,6 +115,10 @@ font-size: 27px;
     .container-fluid {
     display: none;
     }
+    .header-text{
+      padding-top: 135px;
+    }
+  }
 
 @media only screen and (max-width: 1366px) {
   .parallax {
