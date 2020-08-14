@@ -77,6 +77,32 @@ h1{
   padding: 3%;
 }
 
+
+.featurette-divider {
+  margin: 5rem 0; 
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row.featurette {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.featurette-heading {
+    font-size: 50px;
+
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+.col-md-7 {
+  padding-top: 14%;
+}
+
+
     @media only screen and (max-width: 760px) {
       .carousel.slide {
   display: block;
