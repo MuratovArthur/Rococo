@@ -1,7 +1,7 @@
 .navbar{
     background-color: #262F34;
     position: fixed; width:
-    100%; z-index: 1;
+    100%; z-index: 2;
 }
 .navbar-brand{
     padding-left: 2%;
@@ -79,7 +79,6 @@ h1{
 
 
 .featurette-divider {
-  margin: 5rem 0; 
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -91,19 +90,67 @@ h1{
   margin-left: auto;
   margin-right: auto;
 }
+.featurette-image {
+  max-width: 80%;
+  height: auto;
+}
 .featurette-heading {
-    font-size: 50px;
-
+    font-size: 3vw;
+  margin-bottom: 5%; 
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
 }
 .col-md-7 {
-  padding-top: 14%;
+  padding-top: 4vh;
 }
+.lead{
+  max-width: 30vw;
+  margin: 0 auto;
+  font-size: 1.8vw;
+}
+
+ @media only screen and (max-width: 1200px) {
+.col-md-7 {
+  padding-top: 1vh;
+}
+.lead{
+  max-width: 31vw;
+  font-size: 2vw;
+}
+.featurette-heading {
+  margin-bottom: 10%; 
+}
+ }
+
 
 
     @media only screen and (max-width: 760px) {
+      .carousel-indicators{
+        z-index: 1;
+      }
+
+      .row.featurette {
+  padding-bottom: 1rem;
+}
+
+      .featurette-image {
+  max-width: 100%;
+  height: auto;
+}
+
+      .featurette-heading {
+    font-size: 8vw;
+}
+.lead{
+  max-width: 100%;
+  font-size: 4vw;
+  padding-bottom: 30px;
+}
+.row.featurette {
+  padding-top: 0;
+}
+
       .carousel.slide {
   display: block;
 }
