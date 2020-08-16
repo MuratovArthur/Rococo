@@ -114,7 +114,7 @@ h1{
 
 
 .ui.secondary.button {
-   margin-top: 4%;
+   margin-top: 2%;
    width: 100%;
    font-size: 1.2vw;
    background-color: #fff;
@@ -124,13 +124,16 @@ h1{
 }
 .contacts-heading {
   font-size: 3vw;
-  margin-bottom: 5px;
-
-
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .gmail {
+  padding-top: 5%;
   font-size: 1.8vw;
+  font-weight: 200;
   letter-spacing: 1px;
+  max-width: 30vw;
+  margin: 0 auto;
 }
 #about-us {
   color: #fff;
@@ -144,6 +147,9 @@ h1{
   padding-bottom: 3rem;
   background-color: #262F34;
 }
+.fa-paper-plane{
+  padding-left: 2%;
+}
 input::placeholder {
   font-size: 1.2vw;
 }
@@ -151,7 +157,24 @@ textarea::placeholder {
   font-size: 1.2vw;
 }
 
+.row.featurette.last{
+  padding-bottom: 5rem;
+}
 
+.row.mb-0{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+}
+
+.btn-text{
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+  }
+.ui.secondary.button:hover{
+background: #fff;
+color: #262F34;
+}
 @media only screen and (max-width: 1200px) {
   .ui.secondary.button {
    font-size: 1.5vw;
@@ -188,10 +211,14 @@ textarea::placeholder {
 
 
 @media only screen and (max-width: 760px) {
+  .btn-text{
+    font-size: 5vw;
+  }
+  .gmail {
+  max-width: 85%;
+}
   .contacts-heading {
   font-size: 9vw;
-
-
 }
 
 .gmail {
@@ -202,10 +229,10 @@ textarea::placeholder {
    font-size: 3.2vw;
 }
   input::placeholder {
-  font-size: 3.2vw;
+  font-size: 4vw;
 }
 textarea::placeholder {
-  font-size: 3.2vw;
+  font-size: 4vw;
 }
 #about-us {
    margin-right: 0;
