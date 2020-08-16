@@ -26,7 +26,7 @@
    </div>
  </header>
 
- <div class="container-fluid">
+ <div class="container-fluid container-fluid-two">
   <div class="row">
     <div class="col-sm-3 col-sm-3-1">
      <img src="./photos/books.jpg" class="img-thumbnail" >
@@ -128,15 +128,14 @@
   </div>
 </div>
 
-<hr class="featurette-divider">
-
-<div class="about-us-background">  
-  <div class="about"> 
-    <h2> <strong> Контакты </strong> </h2>
-    <p> Rococo_kz@gmail.com</p>
+<div class="container-fluid" >
+<div class="row mb-0" >  
+  <div class="col-md-6" id="about-us" > 
+    <h2 class="contacts-heading" >  Контакты </h2>
+    <p class="gmail"> Rococo_kz@gmail.com</p>
   </div>
 
-  <div class="otclick"> 
+  <div class="col-md-6" id="otclick"> 
 
     <form class="ui form">
 
@@ -166,12 +165,13 @@
 
   <textarea rows="6" placeholder="Добавить сообщение..."></textarea>
 </div>
+</form>
 <button class="ui secondary button" >
   Отправить
 </button> 
 </div>
 </div>
-
+</div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script type="text/javascript">

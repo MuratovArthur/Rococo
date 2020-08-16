@@ -13,6 +13,7 @@
   display: inline;
   font-family: 'Fredoka One', cursive;
   letter-spacing: 1px;
+  font-size: 25px;
 }
 .header-text h1{
   color: black;
@@ -37,7 +38,7 @@
 
 
 }
-.container-fluid {
+.container-fluid.container-fluid-two {
   width: 100%;
   padding-right: 3%;
   padding-left: 3%;
@@ -90,6 +91,7 @@ h1{
   margin-left: auto;
   margin-right: auto;
 }
+
 .featurette-image {
   max-width: 80%;
   height: auto;
@@ -110,37 +112,67 @@ h1{
   font-size: 1.8vw;
 }
 
-.otclick {
-  width: 35%;
-  margin-left: 53%;
-  margin-top: -140px;
-  padding-bottom: 140px;
-}
+
 .ui.secondary.button {
-  margin-top: 4%;
-  width: 100%;
+   margin-top: 4%;
+   width: 100%;
+   font-size: 1.2vw;
+   background-color: #fff;
+   color: #262F34;
+
+
+}
+.contacts-heading {
+  font-size: 3vw;
+  margin-bottom: 5px;
+
+
+}
+.gmail {
+  font-size: 1.8vw;
+  letter-spacing: 1px;
+}
+#about-us {
+  color: #fff;
+  padding-right: 10%;
+}
+.row.mb-0 {
+
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #262F34;
-
+}
+input::placeholder {
+  font-size: 1.2vw;
+}
+textarea::placeholder {
+  font-size: 1.2vw;
 }
 
-.about {
-  margin-top: -13px;
-  margin-left: 7.5%;
-  padding-left: 10%;
-  padding-top: 210px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-.about-us-background {
-  background-color: #e2e4e8;
-}
 
 @media only screen and (max-width: 1200px) {
-  .otclick {
-    width: 40%;
-    margin-left: 50%;
+  .ui.secondary.button {
+   font-size: 1.5vw;
+}
+    input::placeholder {
+  font-size: 1.5vw;
+}
+textarea::placeholder {
+  font-size: 1.5vw;
+}
+.row.mb-0 {
 
-  }
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+#about-us {
+    color: #fff;
+    margin-right: -6%;
+    padding-right: 4%;
+}
   .col-md-7 {
     padding-top: 1vh;
   }
@@ -156,21 +188,32 @@ h1{
 
 
 @media only screen and (max-width: 760px) {
-  .about {
-    margin-top: -13px;
-    padding-top: 90px;
-    padding-left: 0;
-    padding-bottom: 25px;
-    margin-left: 0;
-    text-align: center;
-  }
-  .otclick {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+  .contacts-heading {
+  font-size: 9vw;
 
-  }
+
+}
+
+.gmail {
+  font-size: 5.4vw;
+
+}
+   .ui.secondary.button {
+   font-size: 3.2vw;
+}
+  input::placeholder {
+  font-size: 3.2vw;
+}
+textarea::placeholder {
+  font-size: 3.2vw;
+}
+#about-us {
+   margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 4rem;
+}
+ 
   .carousel-indicators{
     z-index: 1;
   }
@@ -231,6 +274,9 @@ h1{
  
 }
 .container-fluid {
+  display: block;
+}
+.container-fluid.container-fluid-two{
   display: none;
 }
 .header-text{
