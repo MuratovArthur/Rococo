@@ -2,6 +2,7 @@
   background-color: #262F34;
   position: fixed; width:
   100%; z-index: 2;
+  border-bottom: 2px solid #fff;
 }
 .navbar-brand{
   padding-left: 2%;
@@ -147,7 +148,19 @@ h1{
   padding-bottom: 3rem;
   background-color: #262F34;
 }
+.fa-pie-chart{
+   padding-left: 3%;
+}
 .fa-paper-plane{
+  padding-left: 2%;
+}
+.fa-envelope-o{
+  padding-left: 2%;
+}
+.fa-graduation-cap{
+  padding-left: 2%;
+}
+.fa-television{
   padding-left: 2%;
 }
 input::placeholder {
