@@ -117,10 +117,10 @@ h1{
 
 
 .ui.secondary.button {
-   width: 100%;
-   font-size: 1.2vw;
-   background-color: #fff;
-   color: #262F34;
+ width: 100%;
+ font-size: 1.2vw;
+ background-color: #fff;
+ color: #262F34;
 
 
 }
@@ -150,7 +150,7 @@ h1{
   background-color: #262F34;
 }
 .fa-pie-chart{
-   padding-left: 3%;
+ padding-left: 3%;
 }
 .fa-paper-plane{
   padding-left: 2%;
@@ -182,18 +182,25 @@ textarea::placeholder {
 }
 
 .btn-text{
-    font-size: 1.4vw;
-    letter-spacing: 1px;
-  }
+  font-size: 1.4vw;
+  letter-spacing: 1px;
+}
 .ui.secondary.button:hover{
-background: #fff;
-color: #262F34;
+  background: #fff;
+  color: #262F34;
+}
+.ui.icon.button {
+background-color: #262F34;
+    color: #fff;
+    height: 27px;
+    padding-top: 0px;
+    font-size: 19px;
 }
 @media only screen and (max-width: 1200px) {
   .ui.secondary.button {
    font-size: 1.5vw;
-}
-    input::placeholder {
+ }
+ input::placeholder {
   font-size: 1.5vw;
 }
 textarea::placeholder {
@@ -206,121 +213,121 @@ textarea::placeholder {
 
 }
 #about-us {
-    color: #fff;
-    margin-right: -6%;
-    padding-right: 4%;
+  color: #fff;
+  margin-right: -6%;
+  padding-right: 4%;
 }
-  .col-md-7 {
-    padding-top: 1vh;
-  }
-  .lead{
-    max-width: 31vw;
-    font-size: 2vw;
-  }
-  .featurette-heading {
-    margin-bottom: 10%; 
-  }
+.col-md-7 {
+  padding-top: 1vh;
+}
+.lead{
+  max-width: 31vw;
+  font-size: 2vw;
+}
+.featurette-heading {
+  margin-bottom: 10%; 
+}
 }
 
 
 
 @media only screen and (max-width: 760px) {
   .row.mb-0 {
-padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
   i.fa{
-  display: none;
-}
- 
+    display: none;
+  }
+  
   .btn-text{
     font-size: 5vw;
   }
   .gmail {
-  max-width: 85%;
-}
+    max-width: 85%;
+  }
   .contacts-heading {
-  font-size: 9vw;
-}
+    font-size: 9vw;
+  }
 
-.gmail {
-  font-size: 5.4vw;
+  .gmail {
+    font-size: 5.4vw;
 
-}
-   .ui.secondary.button {
+  }
+  .ui.secondary.button {
    font-size: 3.2vw;
-}
-  input::placeholder {
+ }
+ input::placeholder {
   font-size: 4vw;
 }
 textarea::placeholder {
   font-size: 4vw;
 }
 #about-us {
-   margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 4rem;
+ margin-right: 0;
+ padding-left: 0;
+ padding-right: 0;
+ margin-bottom: 4rem;
 }
- 
-  .carousel-indicators{
-    z-index: 1;
-  }
 
-  .row.featurette {
-    padding-bottom: 1rem;
-  }
+.carousel-indicators{
+  z-index: 1;
+}
 
-  .featurette-image {
-    max-width: 100%;
-    height: auto;
-  }
+.row.featurette {
+  padding-bottom: 1rem;
+}
 
-  .featurette-heading {
-    font-size: 8vw;
-  }
-  .lead{
-    max-width: 100%;
-    font-size: 4.5vw;
-    padding-bottom: 30px;
-  }
-  .row.featurette {
-    padding-top: 0;
-  }
+.featurette-image {
+  max-width: 100%;
+  height: auto;
+}
 
-  .carousel.slide {
-    display: block;
-  }
-  .carousel-item {
-    width: 100%;
-    height: 180px;    
-  }
-  .carousel-item img {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    width: 100%;
-  }
+.featurette-heading {
+  font-size: 8vw;
+}
+.lead{
+  max-width: 100%;
+  font-size: 4.5vw;
+  padding-bottom: 30px;
+}
+.row.featurette {
+  padding-top: 0;
+}
 
-  .glow{
-    font-size: 27px;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    position: absolute;
-    bottom: 22px;
-    max-width: 100%;
-    left: -1%;
+.carousel.slide {
+  display: block;
+}
+.carousel-item {
+  width: 100%;
+  height: 180px;    
+}
+.carousel-item img {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  width: 100%;
+}
 
-  }
-  h1{
-   font-size: 3.5em;
- }
- h2{
-   font-size: 1.8rem;
- }
- .parallax {
+.glow{
+  font-size: 27px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  position: absolute;
+  bottom: 22px;
+  max-width: 100%;
+  left: -1%;
+
+}
+h1{
+ font-size: 3.5em;
+}
+h2{
+ font-size: 1.8rem;
+}
+.parallax {
   height: 330px;
 }
 .glow{
- 
+
 }
 .container-fluid {
   display: block;
@@ -343,13 +350,13 @@ textarea::placeholder {
   .row.featurette.last{
     padding-bottom: 5%;
   }
-   .carousel-inner{
+  .carousel-inner{
     max-width: 80%;
     margin: 0 auto; 
-   }
+  }
   .featurette-heading{
-      font-size: 5vw;
-      margin-bottom: 20px; 
+    font-size: 5vw;
+    margin-bottom: 20px; 
   }
   .lead{
     font-size: 3vw;
@@ -360,24 +367,24 @@ textarea::placeholder {
     font-size: 4.5vw;
     object-position: center;
   }
-   .col-md-5{
-     overflow: hidden;
-     max-height: 200px;
-   }
-   .contacts-heading{
-    font-size: 5vw;
-   }
-   .gmail{
-    font-size: 3vw;
-    padding-top: 0;
-   }
-     input::placeholder {
+  .col-md-5{
+   overflow: hidden;
+   max-height: 200px;
+ }
+ .contacts-heading{
+  font-size: 5vw;
+}
+.gmail{
+  font-size: 3vw;
+  padding-top: 0;
+}
+input::placeholder {
   font-size: 3vw;
 }
 textarea::placeholder {
   font-size: 3vw;
 }
 .btn-text{
-font-size: 3vw;
+  font-size: 3vw;
 }
 }
