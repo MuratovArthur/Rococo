@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Navbar</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
- <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Yeseva+One&display=swap" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
- <link rel="stylesheet" type="text/css" href="landing.css">
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="landing.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+
   <nav class="navbar navbar-dark">
     <a class="navbar-brand" href="#">
       <img src="./photos/logo.jpg" class="d-inline-block align-top" alt="">
@@ -18,178 +19,169 @@
     </a>
   </nav>
 
-
   <header class="parallax">
-   <div class="header-text">
-     <h1>ROCOCO</h1>
-     <h2>Почему именно мы?</h2>
-   </div>
- </header>
+    <div class="header-text">
+      <h1>ROCOCO</h1>
+      <h2>Почему именно мы?</h2>
+    </div>
+  </header>
 
- <div class="container-fluid container-fluid-two">
-  <div class="row">
-    <div class="col-sm-3 col-sm-3-1">
-     <img src="./photos/books.jpg" class="img-thumbnail" >
-     <h3 class='glow'> Отбираем самые выгодные предложения</h3>
-   </div>
-   <div class="col-sm-3 col-sm-3-2">
-    <img src="./photos/time.jpeg" class="img-thumbnail" >
-    <h3 class='glow'>Экономим ваше время на поиск информации</h3>
+  <div class="container-fluid container-fluid-two">
+    <div class="row">
+      <div class="col-sm-3 col-sm-3-1">
+        <img src="./photos/books.jpg" class="img-thumbnail">
+        <h3 class='glow'> Отбираем самые выгодные предложения</h3>
+      </div>
+      <div class="col-sm-3 col-sm-3-2">
+        <img src="./photos/time.jpeg" class="img-thumbnail">
+        <h3 class='glow'>Экономим ваше время на поиск информации</h3>
+      </div>
+      <div class="col-sm-3 col-sm-3-3">
+        <img src="./photos/income.jpeg" class="img-thumbnail">
+        <h3 class='glow'>Поможем оптимизировать ваши расходы</h3>
+      </div>
+      <div class="col-sm-3 col-sm-3-4">
+        <img src="./photos/ergonomy.jpg" class="img-thumbnail">
+        <h3 class='glow'>Используем удобный интерфейс</h3>
+      </div>
+    </div>
+
   </div>
-  <div class="col-sm-3 col-sm-3-3">
-    <img src="./photos/income.jpeg" class="img-thumbnail">
-    <h3 class='glow'>Поможем оптимизировать ваши расходы</h3>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="pic1">
+        <img src="./photos/books.jpg" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3 class='glow'>Отбираем самые выгодные предложения</h3>
+
+        </div>
+      </div>
+      <div class="carousel-item" id="pic2">
+        <img src="./photos/time.jpeg" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3 class='glow'>Экономим ваше время на поиск информации</h3>
+
+        </div>
+      </div>
+      <div class="carousel-item" id="pic3">
+        <img src="./photos/income.jpeg" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3 class='glow'>Поможем оптимизировать ваши расходы</h3>
+        </div>
+      </div>
+      <div class="carousel-item" id="pic4">
+        <img src="./photos/ergonomy.jpg" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3 class='glow' id="interface">Используем удобный интерфейс</h3>
+
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="col-sm-3 col-sm-3-4">
-    <img src="./photos/ergonomy.jpg" class="img-thumbnail" >
-    <h3 class='glow'>Используем удобный интерфейс</h3>
-  </div>
-</div>
 
-</div>
+  <hr class="featurette-divider">
 
-
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
- <ol class="carousel-indicators">
-   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-   <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-   <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-   <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-
- </ol>
- <div class="carousel-inner">
-   <div class="carousel-item active" id="pic1">
-     <img src="./photos/books.jpg"  alt="..." >
-     <div class="carousel-caption d-md-block">
-       <h3  class='glow'>Отбираем самые выгодные предложения</h3>
-
-     </div>
-   </div>
-   <div class="carousel-item" id="pic2">
-     <img src="./photos/time.jpeg"  alt="..." >
-     <div class="carousel-caption d-md-block">
-      <h3  class='glow'>Экономим ваше время на поиск информации</h3>
-
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Еда и доставка <i class="fa fa-pie-chart" aria-hidden="true"></i></h2>
+      <p class="lead">Скидки и выгодные предложения таких известных компаний, как <span class="text-muted">KFC</span> <span class="text-muted"> Burger King, McDonald's и DodoPizza.</span> Промокоды на бесплатную доставку таких популярных сервисов, как <span class="text-muted">Glovo и Chocofood.</span> </p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid" src="./photos/pizza.jpeg">
 
     </div>
   </div>
-  <div class="carousel-item" id="pic3">
-   <img src="./photos/income.jpeg"  alt="...">
-   <div class="carousel-caption d-md-block">
-    <h3  class='glow'>Поможем оптимизировать ваши расходы</h3>
-  </div>
-</div>
-<div class="carousel-item" id="pic4">
- <img src="./photos/ergonomy.jpg"  alt="..." >
- <div class="carousel-caption d-md-block">
-  <h3  class='glow' id="interface">Используем удобный интерфейс</h3>
 
-</div>
-</div>
-</div>
+  <hr class="featurette-divider">
 
-</div>
-
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
-  <div class="col-md-7">
-    <h2 class="featurette-heading">Еда и доставка <i class="fa fa-pie-chart" aria-hidden="true"></i></h2>
-    <p class="lead">Скидки и выгодные предложения таких известных компаний, как <span class="text-muted">KFC</span> <span class="text-muted"> Burger King, McDonald's и DodoPizza.</span> Промокоды на бесплатную доставку таких популярных сервисов, как  <span class="text-muted">Glovo и Chocofood.</span> </p>
-  </div>
-  <div class="col-md-5">
-    <img class="featurette-image img-fluid" src="./photos/pizza.jpeg">
-
-  </div>
-</div>
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
-  <div class="col-md-7 order-md-2">
-    <h2 class="featurette-heading">Фильмы и сериалы <i class="fa fa-television" aria-hidden="true"></i></h2>
-    <p class="lead">Подборки популярных и удобных сервисов для просмотра фильмов и сериалов онлайн. Выгодные предложения на премьеры фильмов и дебюты режиссеров </p>
-  </div>
-  <div class="col-md-5 order-md-1">
-   <img class="featurette-image img-fluid" src="./photos/film.png">
- </div>
-</div>
-
-<hr class="featurette-divider">
-
-<div class="row featurette last">
-  <div class="col-md-7">
-    <h2 class="featurette-heading">Обучение и саморазвитие <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
-    <p class="lead">Онлайн курсы по таким современным специализациям как <span class="text-muted">Интернет-маркетолог, Веб-разработка, Машинное обучение, Веб-дизайн, Монтаж видео, Фотошоп и Рисование</span> по самым выгодным условиям.</p>
-  </div>
-  <div class="col-md-5">
-    <img class="featurette-image img-fluid" src="./photos/study.jpeg">
-  </div>
-</div>
-
-<div class="container-fluid" >
-<div class="row mb-0" >  
-  <div class="col-md-6" id="about-us" > 
-    <h2 class="contacts-heading">Свяжитесь с нами <i class="fa fa-envelope-o" aria-hidden="true"></i></h2>
-    <p class="gmail">Если при использовании нашего сайта у вас появился вопрос или возникла проблема, заполните форму обратной связи:</p>
-  </div>
-
-  <div class="col-md-6" id="otclick"> 
-
-    <form class="ui form">
-
-     <div class="two fields">
-      <div class="field">
-       <input type="text" placeholder="Имя">
-     </div>
-     <div class="field">
-      <input type="text" placeholder="Фамилия">
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Фильмы и сериалы <i class="fa fa-television" aria-hidden="true"></i></h2>
+      <p class="lead">Подборки популярных и удобных сервисов для просмотра фильмов и сериалов онлайн. Выгодные предложения на премьеры фильмов и дебюты режиссеров.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img class="featurette-image img-fluid" src="./photos/film.png">
     </div>
   </div>
-  <div class="two fields">
-   <div class="field">
-    <input type="email" placeholder="Эл. адрес">
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette last">
+    <div class="col-md-7">
+      <h2 class="featurette-heading featurette-heading-last">Обучение и саморазвитие <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
+      <p class="lead">Онлайн курсы по таким современным специализациям как <span class="text-muted">Интернет-маркетолог, Веб-разработка, Машинное обучение, Веб-дизайн, Монтаж видео, Фотошоп и Рисование</span> по самым выгодным условиям.</p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid" src="./photos/study.jpeg">
+    </div>
   </div>
-  <div class="field">
-    <input type="text" placeholder="Номер телефона">
+
+  <div class="container-fluid">
+    <div class="row mb-0">
+      <div class="col-md-6" id="about-us">
+        <h2 class="contacts-heading">Свяжитесь с нами <i class="fa fa-envelope-o" aria-hidden="true"></i></h2>
+        <p class="gmail">Если при использовании нашего сайта у вас появился вопрос или возникла проблема, заполните форму обратной связи:</p>
+      </div>
+
+      <div class="col-md-6" id="otclick">
+
+        <form class="ui form">
+
+          <div class="two fields">
+            <div class="field">
+              <input type="text" placeholder="Имя">
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Фамилия">
+            </div>
+          </div>
+          <div class="two fields">
+            <div class="field">
+              <input type="email" placeholder="Эл. адрес">
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Номер телефона">
+            </div>
+          </div>
+
+          <div class="field">
+            <input type="text" placeholder="Тема">
+          </div>
+          <div class="field">
+
+            <textarea rows="6" placeholder="Добавить сообщение..."></textarea>
+          </div>
+
+          <button class="ui secondary button">
+            <p class="btn-text">Отправить<i class="fa fa-paper-plane" aria-hidden="true"></i></p>
+
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
-</div>
-
-
-
-<div class="field">
-  <input type="text"  placeholder="Тема">
-</div>
-<div class="field">
-
-  <textarea rows="6" placeholder="Добавить сообщение..."></textarea>
-</div>
-
-<button class="ui secondary button" >
-  <p class="btn-text">Отправить<i class="fa fa-paper-plane" aria-hidden="true"></i></p>
-  
-</button> 
-</form>
-</div>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-
-  window.addEventListener('resize', function(){
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('resize', function() {
+      if (window.matchMedia("(max-width: 500px)").matches) {
+        document.getElementById("interface").innerHTML = "Используем удобный и понятный интерфейс";
+        document.querySelector(".featurette-heading-last").innerHTML = "Обучение и развитие";
+      };
+    });
     if (window.matchMedia("(max-width: 500px)").matches) {
       document.getElementById("interface").innerHTML = "Используем удобный и понятный интерфейс";
-    } ;
-  });
-  
-  if (window.matchMedia("(max-width: 500px)").matches) {
-    document.getElementById("interface").innerHTML = "Используем удобный и понятный интерфейс";
-  } 
-
-</script>
-
+      document.querySelector(".featurette-heading-last").innerHTML = "Обучение и развитие";
+    }
+  </script>
 </body>
-
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&family=Yeseva+One&display=swap');
+
 .navbar{
   background-color: #262F34;
   position: fixed; width:
@@ -224,6 +226,14 @@ textarea::placeholder {
 
 
 @media only screen and (max-width: 760px) {
+  .row.mb-0 {
+padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+  i.fa{
+  display: none;
+}
+ 
   .btn-text{
     font-size: 5vw;
   }
@@ -272,7 +282,7 @@ textarea::placeholder {
   }
   .lead{
     max-width: 100%;
-    font-size: 4vw;
+    font-size: 4.5vw;
     padding-bottom: 30px;
   }
   .row.featurette {
