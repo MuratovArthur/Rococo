@@ -307,9 +307,9 @@ textarea::placeholder {
     color: #fff;
     position: absolute;
     bottom: 22px;
-    max-width: 130%;
-    width: 129%;
-    left: -14%;
+    max-width: 100%;
+    left: -1%;
+
   }
   h1{
    font-size: 3.5em;
