@@ -338,3 +338,46 @@ textarea::placeholder {
     background-attachment: scroll;
   }
 }
+
+@media only screen and (max-width: 760px) and (min-width: 500px) {
+  .row.featurette.last{
+    padding-bottom: 5%;
+  }
+   .carousel-inner{
+    max-width: 80%;
+    margin: 0 auto; 
+   }
+  .featurette-heading{
+      font-size: 5vw;
+      margin-bottom: 20px; 
+  }
+  .lead{
+    font-size: 3vw;
+  }
+  .glow{
+    max-width: 80%;
+    left: 25px; 
+    font-size: 4.5vw;
+    object-position: center;
+  }
+   .col-md-5{
+     overflow: hidden;
+     max-height: 200px;
+   }
+   .contacts-heading{
+    font-size: 5vw;
+   }
+   .gmail{
+    font-size: 3vw;
+    padding-top: 0;
+   }
+     input::placeholder {
+  font-size: 3vw;
+}
+textarea::placeholder {
+  font-size: 3vw;
+}
+.btn-text{
+font-size: 3vw;
+}
+}
