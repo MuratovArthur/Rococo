@@ -60,14 +60,14 @@
       <div class="carousel-item active" id="pic1">
         <img src="./photos/books.jpg" alt="...">
         <div class="carousel-caption d-md-block">
-          <h3 class='glow'>Отбираем самые выгодные предложения</h3>
+          <h3 class='glow glow-1'>Отбираем самые выгодные предложения</h3>
 
         </div>
       </div>
       <div class="carousel-item" id="pic2">
         <img src="./photos/time.jpeg" alt="...">
         <div class="carousel-caption d-md-block">
-          <h3 class='glow'>Экономим ваше время на поиск информации</h3>
+          <h3 class='glow glow-2'>Экономим ваше время на поиск информации</h3>
 
         </div>
       </div>
@@ -180,7 +180,11 @@
       if (window.matchMedia("(max-width: 450px)").matches) {
         document.getElementById("interface").innerHTML = "Используем удобный интерфейс";
       };
+      if (window.matchMedia("(max-width: 321px)").matches) {
+        document.querySelector(".glow-1").innerHTML = "Отбираем выгодные предложения";
+      };
     });
+
     if (window.matchMedia("(max-width: 500px)").matches) {
       document.getElementById("interface").innerHTML = "Используем удобный и понятный интерфейс";
       document.querySelector(".featurette-heading-last").innerHTML = "Обучение и развитие";
@@ -189,6 +193,14 @@
     if (window.matchMedia("(max-width: 450px)").matches) {
         document.getElementById("interface").innerHTML = "Используем удобный интерфейс";
       };
+
+      if (window.matchMedia("(max-width: 321px)").matches) {
+        document.querySelector(".glow-1").innerHTML = "Отбираем выгодные предложения";
+         document.querySelector(".glow-2").innerHTML = "Экономим ваше время на поиск";
+
+      };
+
+
   </script>
 </body>
 </html>
