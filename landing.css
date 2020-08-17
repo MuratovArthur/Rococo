@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&family=Yeseva+One&display=swap');
 
+.header-text h2{
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 30px;
+}
 .navbar{
   background-color: #262F34;
   position: fixed; width:
@@ -198,6 +203,9 @@ background-color: #262F34;
     font-size: 19px;
 }
 @media only screen and (max-width: 1200px) {
+  .header-text h2{
+  max-width: 60%;
+}
   .ui.secondary.button {
    font-size: 1.5vw;
  }
@@ -233,6 +241,9 @@ textarea::placeholder {
 
 
 @media only screen and (max-width: 760px) {
+  .header-text h2{
+  font-size: 5vw;
+}
   .ui.icon.button{
     padding-left: 0;
     padding-right: 0; 
@@ -391,5 +402,8 @@ textarea::placeholder {
 }
 .btn-text{
   font-size: 3vw;
+}
+.header-text h2{
+  max-width: 60%;
 }
 }
