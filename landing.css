@@ -159,6 +159,7 @@ h1{
   padding-left: 2%;
 }
 .fa-graduation-cap{
+  display: block;
   padding-left: 2%;
 }
 .fa-television{
@@ -232,6 +233,10 @@ textarea::placeholder {
 
 
 @media only screen and (max-width: 760px) {
+  .ui.icon.button{
+    padding-left: 0;
+    padding-right: 0; 
+  }
   .row.mb-0 {
     padding-top: 2rem;
     padding-bottom: 2rem;
