@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&family=Yeseva+One&display=swap');
+
 .navbar{
   background-color: #262F34;
   position: fixed; width:
@@ -10,18 +12,33 @@
 .navbar-brand img{
   width: 60px; height: auto; margin-right: 5px;
 }
-.navbar-brand .landing-h3{
+.navbar-brand .food-h3{
   display: inline;
   font-family: 'Fredoka One', cursive;
   letter-spacing: 1px;
   font-size: 25px;
 }
 
-.navbar-brand .food-h3{
-  display: inline;
+.header-text h1{
+  color: black;
   font-family: 'Fredoka One', cursive;
   letter-spacing: 1px;
-  font-size: 25px;
+}
+.header-text h2{
+  color: black;
+  font-family: 'Yeseva One', cursive;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.header-text{
+ padding-top: 160px;
+ text-align: center;
+}
+
+h1{
+  font-size: 6em;
 }
 
 .ui.icon.button {
@@ -33,12 +50,18 @@ background-color: #262F34;
 }
 
 .parallax {
-  background-image: url(./photos/banner.jpeg);
+  background-image: url(../photos/banner.jpeg);
   height: 460px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-text h2{
+  max-width: 60%;
+}
 }
 
 @media only screen and (max-width: 760px) {
