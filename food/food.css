@@ -4,7 +4,6 @@
   position: fixed; width:
   100%; z-index: 2;
   border-bottom: 2px solid #fff;
-  z-index: 9;
 }
 .navbar-brand{
   padding-left: 2%;
@@ -99,6 +98,16 @@ font-weight: 700;
 }
 
 @media only screen and (max-width: 760px) {
+  body{
+    width: 100%;
+  }
+  div.ui.four.column.centered.grid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+div.ui.link.cards {
+  margin-bottom: 2%;
+}
     .header-text h2{
   font-size: 5vw;
 }
