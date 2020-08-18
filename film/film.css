@@ -17,7 +17,13 @@
   letter-spacing: 1px;
   font-size: 25px;
 }
-
+.image{
+  overflow: hidden;
+}
+.film-href:hover{
+  color: red;
+  font-weight: 700;
+}
 .header-text h1{
   font-weight: 400;
   color: white;
