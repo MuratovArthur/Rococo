@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&family=Yeseva+One&display=swap');
+.navbar{
+  background-color: #262F34;
+  position: fixed; width:
+  100%; z-index: 9;
+  border-bottom: 2px solid #fff;
+}
+.navbar-brand{
+  padding-left: 2%;
+}
+.navbar-brand img{
+  width: 60px; height: auto; margin-right: 5px;
+}
+.navbar-brand .film-h3{
+  display: inline;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.header-text h1{
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1px;
+}
+.header-text h2{
+  color: white;
+  font-family: 'Yeseva One', cursive;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.header-text{
+ padding-top: 160px;
+ text-align: center;
+}
+.footer{
+  height: 60px;
+  background-color: #262F34;
+  border-top: 2px solid #fff;
+}
+
+h1{
+  font-size: 6em;
+}
+
+.ui.icon.button {
+background-color: #262F34;
+    color: #fff;
+    height: 27px;
+    padding-top: 0px;
+    font-size: 19px;
+}
+
+body{
+  background: rgb(230, 230, 230, 0.5);
+}
+
+
+.parallax {
+  background-image: url('../photos/cinema.png');
+  height: 460px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.ui.four.column.centered.grid {
+    margin-top: 4rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+div.description {
+  font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+          margin-top: -6px;
+}
+div.header h2 {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  
+}
+div.ui.link.cards {
+  margin-top: 12px;
+}
+div.meta {
+    margin-top: 5px;
+    margin-bottom: -4px;
+}
+.text-muted{
+font-weight: 700;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .header-text h2{
+  max-width: 80%;
+}
+}
+
+@media only screen and (max-width: 760px) {
+  .footer{
+  height: 40px;
+}
+  div.ui.four.column.centered.grid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+div.ui.link.cards {
+  margin-bottom: 2%;
+}
+    .header-text h2{
+  font-size: 5vw;
+}
+h1{
+ font-size: 3.5em;
+}
+h2{
+ font-size: 1.8rem;
+}
+.header-text{
+  padding-top: 135px;
+}
+  .ui.icon.button{
+    padding-left: 0;
+    padding-right: 0; 
+  }
+  .parallax {
+  height: 330px;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
