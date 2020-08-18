@@ -1,0 +1,58 @@
+.navbar{
+  background-color: #262F34;
+  position: fixed; width:
+  100%; z-index: 2;
+  border-bottom: 2px solid #fff;
+}
+.navbar-brand{
+  padding-left: 2%;
+}
+.navbar-brand img{
+  width: 60px; height: auto; margin-right: 5px;
+}
+.navbar-brand .landing-h3{
+  display: inline;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.navbar-brand .food-h3{
+  display: inline;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.ui.icon.button {
+background-color: #262F34;
+    color: #fff;
+    height: 27px;
+    padding-top: 0px;
+    font-size: 19px;
+}
+
+.parallax {
+  background-image: url(./photos/banner.jpeg);
+  height: 460px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 760px) {
+  .ui.icon.button{
+    padding-left: 0;
+    padding-right: 0; 
+  }
+  .parallax {
+  height: 330px;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
