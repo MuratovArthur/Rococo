@@ -40,6 +40,13 @@
   margin-bottom: 16%;
 
 }
+.featurette-heading a{
+  color: black;
+}
+
+.featurette-heading a:hover{
+  color: gray;
+}
 
 
 .row {
