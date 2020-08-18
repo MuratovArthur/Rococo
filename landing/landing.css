@@ -55,7 +55,7 @@
 
 }
 .parallax {
-  background-image: url(./photos/banner.jpeg);
+  background-image: url(../photos/banner.jpeg);
   height: 460px;
   background-attachment: fixed;
   background-position: center;
