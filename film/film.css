@@ -19,6 +19,7 @@
 }
 
 .header-text h1{
+  font-weight: 400;
   color: white;
   font-family: 'Fredoka One', cursive;
   letter-spacing: 1px;
@@ -29,6 +30,7 @@
   max-width: 90%;
   margin: 0 auto;
   font-size: 30px;
+  font-weight: 400;
 }
 
 .header-text{
@@ -46,11 +48,11 @@ h1{
 }
 
 .ui.icon.button {
-background-color: #262F34;
-    color: #fff;
-    height: 27px;
-    padding-top: 0px;
-    font-size: 19px;
+  background-color: #262F34;
+  color: #fff;
+  height: 27px;
+  padding-top: 0px;
+  font-size: 19px;
 }
 
 body{
@@ -67,16 +69,16 @@ body{
   background-size: cover;
 }
 div.ui.four.column.centered.grid {
-    margin-top: 4rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 4rem;
+  margin-top: 4rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
 }
 div.description {
   font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-          margin-top: -6px;
+  font-weight: 400;
+  margin-top: -6px;
 }
 div.header h2 {
   font-family: 'Alata', sans-serif;
@@ -88,48 +90,51 @@ div.ui.link.cards {
   margin-top: 12px;
 }
 div.meta {
-    margin-top: 5px;
-    margin-bottom: -4px;
+  margin-top: 5px;
+  margin-bottom: -4px;
 }
 .text-muted{
-font-weight: 700;
+  font-weight: 700;
 }
-
+div.image {
+  max-width: 290px;
+  max-height: 290px;
+}
 
 @media only screen and (max-width: 1200px) {
   .header-text h2{
-  max-width: 80%;
-}
+    max-width: 80%;
+  }
 }
 
 @media only screen and (max-width: 760px) {
   .footer{
-  height: 40px;
-}
+    height: 40px;
+  }
   div.ui.four.column.centered.grid {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-div.ui.link.cards {
-  margin-bottom: 2%;
-}
-    .header-text h2{
-  font-size: 5vw;
-}
-h1{
- font-size: 3.5em;
-}
-h2{
- font-size: 1.8rem;
-}
-.header-text{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  div.ui.link.cards {
+    margin-bottom: 2%;
+  }
+  .header-text h2{
+    font-size: 5vw;
+  }
+  h1{
+   font-size: 3.5em;
+ }
+ h2{
+   font-size: 1.8rem;
+ }
+ .header-text{
   padding-top: 135px;
 }
-  .ui.icon.button{
-    padding-left: 0;
-    padding-right: 0; 
-  }
-  .parallax {
+.ui.icon.button{
+  padding-left: 0;
+  padding-right: 0; 
+}
+.parallax {
   height: 330px;
 }
 }
