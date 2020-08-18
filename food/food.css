@@ -35,6 +35,11 @@
  padding-top: 160px;
  text-align: center;
 }
+.footer{
+  height: 60px;
+  background-color: #262F34;
+  border-top: 2px solid #fff;
+}
 
 h1{
   font-size: 6em;
@@ -98,6 +103,9 @@ font-weight: 700;
 }
 
 @media only screen and (max-width: 760px) {
+  .footer{
+  height: 40px;
+}
   div.ui.four.column.centered.grid {
   margin-top: 2rem;
   margin-bottom: 2rem;
