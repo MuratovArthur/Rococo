@@ -20,12 +20,12 @@
 }
 
 .header-text h1{
-  color: black;
+  color: white;
   font-family: 'Fredoka One', cursive;
   letter-spacing: 1px;
 }
 .header-text h2{
-  color: black;
+  color: white;
   font-family: 'Yeseva One', cursive;
   max-width: 90%;
   margin: 0 auto;
@@ -50,7 +50,7 @@ background-color: #262F34;
 }
 
 .parallax {
-  background-image: url(../photos/banner.jpeg);
+  background-image: url('../photos/food.jpeg');
   height: 460px;
   background-attachment: fixed;
   background-position: center;
