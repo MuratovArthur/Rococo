@@ -5,6 +5,7 @@
   position: fixed; width:
   100%; z-index: 2;
   border-bottom: 2px solid #fff;
+  z-index: 9;
 }
 .navbar-brand{
   padding-left: 2%;
@@ -57,7 +58,27 @@ background-color: #262F34;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+div.ui.four.column.centered.grid {
+  margin-top: 4rem;
+}
+div.description {
+  font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+          margin-top: -6px;
+}
+div.header h2 {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  
+}
+div.ui.link.cards {
+  margin-top: 12px;
+}
+div.meta {
+    margin-top: 5px;
+    margin-bottom: -4px;
+}
 @media only screen and (max-width: 1200px) {
   .header-text h2{
   max-width: 60%;
