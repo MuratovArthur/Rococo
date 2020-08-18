@@ -55,7 +55,7 @@ body{
 
 
 .parallax {
-  background-image: url('https://sun9-30.userapi.com/VmM_L0CFv9tYZo2l0ZQyhxZPkJDqHUxWAC_pNw/mOHU71B_MJI.jpg');
+  background-image: url('../photos/food-banner.jpg');
   height: 460px;
   background-attachment: fixed;
   background-position: center;
@@ -63,8 +63,11 @@ body{
   background-size: cover;
 }
 div.ui.four.column.centered.grid {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+    margin-top: 4rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
 }
 div.description {
   font-family: 'Roboto', sans-serif;
