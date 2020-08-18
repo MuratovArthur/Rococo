@@ -65,6 +65,18 @@ background-color: #262F34;
 }
 
 @media only screen and (max-width: 760px) {
+    .header-text h2{
+  font-size: 5vw;
+}
+h1{
+ font-size: 3.5em;
+}
+h2{
+ font-size: 1.8rem;
+}
+.header-text{
+  padding-top: 135px;
+}
   .ui.icon.button{
     padding-left: 0;
     padding-right: 0; 
