@@ -2,7 +2,7 @@
 .navbar{
   background-color: #262F34;
   position: fixed; width:
-  100%; z-index: 2;
+  100%; z-index: 9;
   border-bottom: 2px solid #fff;
 }
 .navbar-brand{
