@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&family=Yeseva+One&display=swap');
-
 .navbar{
   background-color: #262F34;
   position: fixed; width:
@@ -50,8 +49,13 @@ background-color: #262F34;
     font-size: 19px;
 }
 
+body{
+  background: rgb(230, 230, 230, 0.5);
+}
+
+
 .parallax {
-  background-image: url('../photos/food.jpeg');
+  background-image: url('https://sun9-30.userapi.com/VmM_L0CFv9tYZo2l0ZQyhxZPkJDqHUxWAC_pNw/mOHU71B_MJI.jpg');
   height: 460px;
   background-attachment: fixed;
   background-position: center;
@@ -60,6 +64,7 @@ background-color: #262F34;
 }
 div.ui.four.column.centered.grid {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 div.description {
   font-family: 'Roboto', sans-serif;
@@ -79,6 +84,11 @@ div.meta {
     margin-top: 5px;
     margin-bottom: -4px;
 }
+.text-muted{
+font-weight: 700;
+}
+
+
 @media only screen and (max-width: 1200px) {
   .header-text h2{
   max-width: 60%;
