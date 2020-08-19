@@ -32,6 +32,7 @@
 .header-text h2{
   color: black;
   font-family: 'Yeseva One', cursive;
+   font-weight: 400;
 }
 .col-sm-3 img{
   max-width: 100%;

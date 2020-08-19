@@ -11,7 +11,7 @@
 .navbar-brand img{
   width: 60px; height: auto; margin-right: 5px;
 }
-.navbar-brand .food-h3{
+.navbar-brand .study-h3{
   display: inline;
   font-family: 'Fredoka One', cursive;
   letter-spacing: 1px;
@@ -29,7 +29,7 @@
   max-width: 90%;
   margin: 0 auto;
   font-size: 30px;
-   font-weight: 400;
+  font-weight: 400;
 }
 
 .header-text{
@@ -60,10 +60,10 @@ body{
 
 
 .parallax {
-  background-image: url('../photos/food-banner.jpg');
+  background-image: url('https://images.unsplash.com/photo-1589987607627-616cac5c2c5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
   height: 460px;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
