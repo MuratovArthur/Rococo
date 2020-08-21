@@ -173,7 +173,7 @@ h1{
   padding-left: 2%;
 }
 .fa-graduation-cap{
-  display: block;
+  display: inline-block;
   padding-left: 2%;
 }
 .fa-television{
