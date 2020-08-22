@@ -380,16 +380,16 @@ h2{
     margin: 0 auto; 
   }
   .featurette-heading{
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 20px; 
   }
   .lead{
     font-size: 3vw;
   }
   .glow{
-    max-width: 80%;
-    left: 25px; 
-    font-size: 4.5vw;
+    max-width: 70%;
+    left: 15%; 
+    font-size: 3.5vw;
     object-position: center;
   }
   .col-md-5{
@@ -397,20 +397,20 @@ h2{
    max-height: 200px;
  }
  .contacts-heading{
-  font-size: 5vw;
+  font-size: 4vw;
 }
 .gmail{
   font-size: 3vw;
   padding-top: 0;
 }
 input::placeholder {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 textarea::placeholder {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 .btn-text{
-  font-size: 3vw;
+  font-size: 2vw;
 }
 .header-text h2{
   max-width: 60%;
