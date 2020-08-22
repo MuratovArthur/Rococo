@@ -339,7 +339,7 @@ textarea::placeholder {
   color: #fff;
   position: absolute;
   bottom: 22px;
-  max-width: 90%;
+  max-width: 98%;
   left: 0%;
 }
 h1{
@@ -375,12 +375,7 @@ h2{
 .col-sm-6.col-md-3.last {
     margin-top: -45px;
 }
-  .container-fluid.container-fluid-two{
-  display: block;
-}
-.carousel.slide {
-  display: none;
-}
+
   .row.featurette.last{
     padding-bottom: 5%;
   }
@@ -396,13 +391,12 @@ h2{
     font-size: 3vw;
   }
   .glow{
-     max-width: 70%;
-    left: 15%;
-    bottom: 40%;
-    font-size: 3.5vw;
+     max-width: 100%;
+    bottom: 60%;
+    font-size: 4.5vw;
     object-position: center;
   }
-  .col-md-5{
+  .col-sm-5{
    overflow: hidden;
    max-height: 200px;
  }
