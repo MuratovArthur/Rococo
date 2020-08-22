@@ -99,7 +99,7 @@ font-weight: 700;
 
 @media only screen and (max-width: 1200px) {
   .header-text h2{
-  max-width: 60%;
+  max-width: 80%;
 }
 }
 
