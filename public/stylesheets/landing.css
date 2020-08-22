@@ -339,7 +339,7 @@ textarea::placeholder {
   color: #fff;
   position: absolute;
   bottom: 22px;
-  max-width: 90%;
+  max-width: 100%;
   left: 0%;
 }
 h1{
