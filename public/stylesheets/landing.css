@@ -34,7 +34,7 @@
   font-family: 'Yeseva One', cursive;
    font-weight: 400;
 }
-.col-sm-3 img{
+.col-sm-6 img{
   max-width: 100%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   margin-top: 16%;
@@ -251,7 +251,8 @@ textarea::placeholder {
 
 @media only screen and (max-width: 760px) {
   .header-text h2{
-  font-size: 5vw;
+font-size: 6vw;
+    max-width: 70%;
 }
   .ui.icon.button{
     padding-left: 0;
@@ -371,6 +372,15 @@ h2{
 }
 
 @media only screen and (max-width: 760px) and (min-width: 500px) {
+.col-sm-6.col-md-3.last {
+    margin-top: -45px;
+}
+  .container-fluid.container-fluid-two{
+  display: block;
+}
+.carousel.slide {
+  display: none;
+}
   .row.featurette.last{
     padding-bottom: 5%;
   }
@@ -386,8 +396,9 @@ h2{
     font-size: 3vw;
   }
   .glow{
-    max-width: 70%;
-    left: 15%; 
+     max-width: 70%;
+    left: 15%;
+    bottom: 40%;
     font-size: 3.5vw;
     object-position: center;
   }
@@ -413,5 +424,6 @@ textarea::placeholder {
 }
 .header-text h2{
   max-width: 60%;
+  font-size: 4vw;
 }
 }
