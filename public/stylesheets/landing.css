@@ -339,8 +339,7 @@ textarea::placeholder {
   position: absolute;
   bottom: 22px;
   max-width: 100%;
-  left: -1%;
-
+  left: 0%;
 }
 h1{
  font-size: 3.5em;
