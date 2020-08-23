@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&family=Montserrat:wght@400&family=Roboto&family=Yeseva+One&display=swap');
 
-
 .header-text h2{
   max-width: 90%;
   margin: 0 auto;
@@ -70,7 +69,7 @@
 
 }
 .parallax {
-  background-image: url(../photos/banner.jpeg);
+  background-image: url(../photos/banner.webp);
   height: 460px;
   background-attachment: fixed;
   background-position: center;
