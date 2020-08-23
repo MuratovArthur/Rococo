@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&family=Montserrat:wght@200;400;500&family=Roboto&family=Yeseva+One&display=swap');
+
 .navbar{
   background-color: #262F34;
   position: fixed; width:
@@ -21,7 +22,7 @@
 .header-text h1{
   color: white;
   font-family: 'Fredoka One', cursive;
-  letter-spacing: 1px;
+    letter-spacing: 0.3vw;
 }
 .header-text h2{
   color: white;
