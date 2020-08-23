@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&family=Montserrat:wght@200;400;500&family=Roboto&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&family=Montserrat:wght@400&family=Roboto&family=Yeseva+One&display=swap');
 
 
 .header-text h2{
@@ -256,6 +256,12 @@ textarea::placeholder {
 font-size: 6vw;
     max-width: 70%;
 }
+.navbar-brand .landing-h3{
+  letter-spacing: 0.5px;
+}
+.header-text h1{
+letter-spacing: -0.4px;
+}
   .ui.icon.button{
     padding-left: 0;
     padding-right: 0; 
@@ -338,9 +344,8 @@ textarea::placeholder {
 .glow{
   font-size: 27px;
   color: #fff;
-  font-weight: 500;
   position: absolute;
-  letter-spacing: -2px;
+  letter-spacing: -1.8px;
   bottom: 22px;
   max-width: 100%;
   left: 0%;
