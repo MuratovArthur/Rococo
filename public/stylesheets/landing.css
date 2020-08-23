@@ -24,16 +24,21 @@
   font-family: 'Fredoka One', cursive;
   letter-spacing: 1px;
   font-size: 25px;
+  font-display: swap;
 }
 .header-text h1{
   color: black;
   font-family: 'Fredoka One', cursive;
     letter-spacing: 0.3vw;
+  font-display: swap;
+
 }
 .header-text h2{
   color: black;
   font-family: 'Yeseva One', cursive;
    font-weight: 400;
+  font-display: swap;
+
 }
 .col-sm-6 img{
   max-width: 100%;
@@ -85,6 +90,8 @@ h1{
   font-weight: 200;
   color: #fff;
   position: absolute; bottom: 35%; max-width: 80%; left: 10%;
+  font-display: swap;
+  
 }
 
 
