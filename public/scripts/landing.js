@@ -27,3 +27,8 @@
          document.querySelector(".glow-2").innerHTML = "Экономим ваше время на поиск";
 
       };
+
+
+      $(document).ready(function() {
+        $("#phone").mask("+7 (000)-000-00-00");
+      });
