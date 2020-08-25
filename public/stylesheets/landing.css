@@ -189,10 +189,10 @@ h1{
   padding-left: 2%;
 }
 input::placeholder {
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 textarea::placeholder {
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 
 .row.featurette.last{
