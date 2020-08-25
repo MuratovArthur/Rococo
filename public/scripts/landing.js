@@ -1,4 +1,6 @@
 
+
+
     window.addEventListener('resize', function() {
       if (window.matchMedia("(max-width: 500px)").matches) {
         document.getElementById("interface").innerHTML = "Используем удобный и понятный интерфейс";

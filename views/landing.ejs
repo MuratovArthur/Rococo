@@ -3,21 +3,24 @@
 
 <head>
   <meta charset="utf-8">
-    <meta name="description" CONTENT="Купоны и промокоды">
+  <meta name="description" CONTENT="Купоны и промокоды">
   <title>Rococo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" >
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/landing.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
   <link rel="shortcut icon" href="photos/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
 
   <nav class="navbar navbar-dark">
     <a class="navbar-brand" href="/">
-      <img src="/photos/logo.webp" type='image/webp' class="d-inline-block align-top" alt="">
+      <img src="/photos/logo.webp" type='image/webp' class="d-inline-block align-top wow animate_animated " alt="" >
       <h3 class="landing-h3">ROCOCO</h3>
     </a>
     <button class="ui icon button" aria-label="instagram">
@@ -96,22 +99,23 @@
   </div>
 
   <hr class="featurette-divider">
-
-  <div class="row featurette" id="food">
+  
+  <div class="row featurette wow animate_animated " id="food">
     <div class="col-sm-7">
       <h2 class="featurette-heading"><a href="/food">Еда и доставка </a><i class="fa fa-pie-chart" aria-hidden="true"></i></h2>
       
       <p class="lead">Скидки и выгодные предложения таких известных компаний, как <span class="text-muted">KFC</span> <span class="text-muted"> Burger King, McDonald's и DodoPizza.</span> Промокоды на бесплатную доставку таких популярных сервисов, как <span class="text-muted">Glovo и Chocofood.</span> </p>
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-5 ">
       <img class="featurette-image img-fluid" src="/photos/pizza.webp" type='image/webp' alt="">
 
     </div>
   </div>
 
-  <hr class="featurette-divider" id="films">
 
-  <div class="row featurette">
+  <hr class="featurette-divider ">
+
+  <div class="row featurette wow animate_animated"  id="films">
     <div class="col-sm-7 order-sm-2">
       <h2 class="featurette-heading"><a href="/films">Фильмы и сериалы </a><i class="fa fa-television" aria-hidden="true"></i></h2>
       <p class="lead">Подборки популярных и удобных сервисов для просмотра фильмов и сериалов онлайн. Выгодные предложения на премьеры фильмов и дебюты режиссеров.</p>
@@ -121,9 +125,9 @@
     </div>
   </div>
 
-  <hr class="featurette-divider" id="study">
+  <hr class="featurette-divider" >
 
-  <div class="row featurette last">
+  <div class="row featurette last  wow animate_animated" id="study">
     <div class="col-sm-7">
       <h2 class="featurette-heading featurette-heading-last"><a href="/study" class="a-last">Обучение и саморазвитие </a><i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
       <p class="lead">Онлайн курсы по таким современным специализациям как <span class="text-muted">Интернет-маркетинг, Веб-разработка, Машинное обучение, Веб-дизайн, Монтаж видео, Фотошоп и Рисование</span> по самым выгодным условиям.</p>
@@ -147,38 +151,43 @@
           <div class="two fields">
             <div class="field">
              <label aria-label="...">  <input type="text" placeholder="Имя"> </label>
-            </div>
-            <div class="field">
+           </div>
+           <div class="field">
              <label aria-label="..."> <input type="text" placeholder="Город"> </label>
-            </div>
-          </div>
-          <div class="two fields">
-            <div class="field">
-              <label aria-label="..."> <input type="email" placeholder="Эл. адрес"> </label>
-            </div>
-            <div class="field">
-             <label aria-label="...">  <input type="text" placeholder="Номер телефона"> </label>
-            </div>
-          </div>
-
+           </div>
+         </div>
+         <div class="two fields">
           <div class="field">
-           <label aria-label="...">  <input type="text" placeholder="Тема"> </label>
+            <label aria-label="..."> <input type="email" placeholder="Эл. адрес"> </label>
           </div>
           <div class="field">
+           <label aria-label="...">  <input type="text" placeholder="Номер телефона"> </label>
+         </div>
+       </div>
 
-            <label aria-label="..."> <textarea rows="6" placeholder="Добавить сообщение..."></textarea> </label>
-          </div>
+       <div class="field">
+         <label aria-label="...">  <input type="text" placeholder="Тема"> </label>
+       </div>
+       <div class="field">
 
-          <button class="ui secondary button">
-            <p class="btn-text">Отправить<i class="fa fa-paper-plane" aria-hidden="true"></i></p>
-
-          </button>
-        </form>
+        <label aria-label="..."> <textarea rows="6" placeholder="Добавить сообщение..."></textarea> </label>
       </div>
-    </div>
+
+      <button class="ui secondary button">
+        <p class="btn-text">Отправить<i class="fa fa-paper-plane" aria-hidden="true"></i></p>
+
+      </button>
+    </form>
   </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/scripts/landing.js"></script>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/landing.js"></script>
+<script type="text/javascript" src="/scripts/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
 </body>
 </html>

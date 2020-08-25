@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&family=Montserrat:wght@400&family=Roboto&family=Yeseva+One&display=swap');
 
+
+#food {
+    animation: fadeInLeft;
+  animation-duration: 1.5s; 
+}
+#films {
+    animation: fadeInRight;
+  animation-duration: 1.5s; 
+}
+#study {
+    animation: fadeInLeft;
+  animation-duration: 1.5s; 
+}
+
 .header-text h2{
   max-width: 90%;
   margin: 0 auto;
@@ -17,6 +31,7 @@
 }
 .navbar-brand img{
   width: 60px; height: auto; margin-right: 5px;
+
 }
 .navbar-brand .landing-h3{
   display: inline;
