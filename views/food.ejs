@@ -34,114 +34,34 @@
   <div class="ui four column centered grid" >
     <div class="ui link cards">
 
+<% foodCards.forEach(function(card){ %>
+
       <div class="card">
         <div class="image">
-          <img src="https://instagram.fcit2-1.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/116388974_340875320643571_8811507230514928975_n.jpg?_nc_ht=instagram.fcit2-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=-FogYnOy2lUAX_2ZrMV&oh=0b8eb3b4dbda6f5c7c3b617c7ffa0c18&oe=5F665647"  alt="">
+          <img src="<%=card.image%>"  alt="">
         </div>
         <div class="content">
-          <div class="header"> <h2>McDonald’s®</h2> </div>
+          <div class="header"> <h2><%=card.title%></h2> </div>
           <div class="meta">
-            <a class="text-muted">Cкидка 500 тг</a>
+            <p class="text-muted"><%=card.subtitle%></p>
           </div>
           <hr class="featurette-divider">
           <div class="description">
-           <p> Cкидка 500 тг на первый заказ для новых пользователей с промокодом <span class="text-muted">  MCDKZ </span>
-            Заказывайте доставку ваших любимых блюд до двери в городах Алматы и Нур-Султан 
-          </p>
+           <p> <%=card.description%> </p>
         </div>
       </div>
       <div class="extra content">
         <span >
-          Количество промокодов ограничено
+          <%=card.extra%>
         </span>
-        
       </div>
     </div>
-  </div>
-  <div class="ui link cards">
 
+     <% }); %>
 
-   <div class="card">
-    <div class="image">
-      <img src="https://instagram.fcit2-1.fna.fbcdn.net/v/t51.2885-15/e35/109428920_1215142485487536_3482340551405654876_n.jpg?_nc_ht=instagram.fcit2-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=3wYQOoVxPAcAX-o0HTx&oh=d3c93bfab077df49d573dadf28c160e3&oe=5F64F66D" alt="">
-    </div>
-    <div class="content">
-      <div class="header"> <h2>Dodo Pizza Shymkent </h2></div>
-      <div class="meta">
-        <a class="text-muted">Пицца в подарок</a>
-      </div>
-      <hr class="featurette-divider">
-      <div class="description">
-        <p>Скачайте наше мобильное приложение Додо Пицца. Соберите свой первый заказ на минимальную сумму для доставки 2 250 тенге в корзину. Примените промо код:  <span class="text-muted">  D0000 </span></p>
-
-        
-        
-      </div>
-    </div>
-    <div class="extra content">
-      <span >
-        Акция так же действует на самовывоз
-      </span>
-      
-    </div>
   </div>
 </div>
-<div class="ui link cards">
 
-
-  <div class="card">
-    <div class="image">
-      <img src="https://instagram.fcit2-1.fna.fbcdn.net/v/t51.2885-15/e35/116140780_345849323083772_1407583575281349190_n.jpg?_nc_ht=instagram.fcit2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=w1BZ7SKP7pIAX-_rqx8&oh=dc993c59610902921c97fe3fee3c9f89&oe=5F63E377" alt="">
-    </div>
-    <div class="content">
-      <div class="header"><h2> Burger King Karaganda </h2></div>
-      <div class="meta">
-        <a class="text-muted">Купоны и скидки до 40%</a>
-      </div>
-      <hr class="featurette-divider">
-      <div class="description">
-       <p>  Отличные новости для Караганды
-       Скидки до 40% в ресторане Burger King по адресу   ул.Космонавтов 1а. Заезжай на Автоэкспресс, отсканируй QR из понравившегося предложения в карусели.</p>
-
-       
-       
-     </div>
-   </div>
-   <div class="extra content">
-    <span >
-      Забирай бургеры по лучшим ценам
-    </span>
-    
-  </div>
-</div>
-</div>
-<div class="ui link cards">
-
-  <div class="card">
-    <div class="image">
-      <img src="https://instagram.fcit2-1.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/116388974_340875320643571_8811507230514928975_n.jpg?_nc_ht=instagram.fcit2-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=-FogYnOy2lUAX_2ZrMV&oh=0b8eb3b4dbda6f5c7c3b617c7ffa0c18&oe=5F665647" alt="">
-    </div>
-    <div class="content">
-      <div class="header"> <h2>McDonald’s®</h2> </div>
-      <div class="meta">
-        <a class="text-muted">Cкидка 500 тг</a>
-      </div>
-      <hr class="featurette-divider">
-      <div class="description">
-       <p> Cкидка 500 тг на первый заказ для новых пользователей с промокодом <span class="text-muted">  MCDKZ </span>
-        Заказывайте доставку ваших любимых блюд до двери в городах Алматы и Нур-Султан 
-      </p>
-    </div>
-  </div>
-  <div class="extra content">
-    <span >
-      Количество промокодов ограничено
-    </span>
-    
-  </div>
-</div>
-</div>
-</div>
 
 
 

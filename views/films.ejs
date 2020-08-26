@@ -32,116 +32,35 @@
       <h2>Смотри лицензионный контент по доступной цене!</h2>
     </div>
   </header>
-  <div class="ui four column centered grid" >
+
+  <div class="ui four column centered grid">
     <div class="ui link cards">
+
+      <% filmCards.forEach(function(filmcard){ %>
 
       <div class="card">
         <div class="image">
-          <img src="https://ask.ivi.ru/s/attachments/15170/0/0/project_logo_sAUdHFU.png" alt="">
+          <img src="<%=filmcard.image%>"  alt="">
         </div>
         <div class="content">
-          <div class="header"> <h2>Ivi</h2> </div>
+          <div class="header"> <h2><%=filmcard.title%></h2> </div>
           <div class="meta">
-            <a class="text-muted">Скидка 30%</a>
+            <p class="text-muted"><%=filmcard.subtitle%></p>
           </div>
           <hr class="featurette-divider">
           <div class="description">
-           <p>Драйвовый IVI Weekend пригнал, чтобы подарить тебе <span class="text-muted">скидку 30%.</span> 
-
-            Экшн, закрученные повороты сюжета и много адреналина — все это в подборке фильмов недели.
-            
-          </p>
+           <p> <%=filmcard.description%> </p>
         </div>
       </div>
       <div class="extra content">
-        <span >
-         Выберайте на официальном сайте 
-       </span>
-       
-     </div>
-   </div>
- </div>
- <div class="ui link cards">
-
-
-   <div class="card">
-    <div class="image">
-      <img src="https://static.pepper.ru/threads/thread_full_screen/default/54044_1.jpg" alt="">
-    </div>
-    <div class="content">
-      <div class="header"> <h2>More.tv</h2></div>
-      <div class="meta">
-        <a class="text-muted">Месяц подписки бесплатно</a>
-      </div>
-      <hr class="featurette-divider">
-      <div class="description">
-        <p>Переходим в раздел промокоды и вводим промокод  <span class="text-muted">  ILOVESONY. </span></p>  После активации для просмотра станут доступны все фильмы, сериалы и шоу без рекламы
-
-        
-        
+        <span>
+          <a href="<%=filmcard.link%>" class="text-muted">Перейти на сайт</a>
+        </span>
       </div>
     </div>
-    <div class="extra content">
-      <span >
-        Промокод откроет доступ к подписке на 30 дней
-      </span>
-      
-    </div>
-  </div>
-</div>
-<div class="ui link cards">
 
+     <% }); %>
 
-  <div class="card">
-    <div class="image">
-      <img src="https://можнодома.рф/wp-content/uploads/2020/03/2-1-500x500.png" alt="">
-    </div>
-    <div class="content">
-      <div class="header"><h2> Okko.tv</h2></div>
-      <div class="meta">
-        <a class="text-muted">Месяц подписки бесплатно</a>
-      </div>
-      <hr class="featurette-divider">
-      <div class="description">
-       <p>  Переходим на сайт <a class="text-muted" href="https://okko.tv/"> Okko.tv </a>и вводим промокод <span class="text-muted">816538. </span>
-       Бесплатно получаем доступ ко всем фильмам, сериалам и шоу.</p>
-
-       
-       
-     </div>
-   </div>
-   <div class="extra content">
-    <span >
-      Отключите автопродление подписке при активации
-    </span>
-    
-  </div>
-</div>
-</div>
-<div class="ui link cards">
-
-  <div class="card">
-    <div class="image">
-      <img src="https://thumbs.dfs.ivi.ru/storage2/contents/5/e/d7884a911a93f529fedbba07052b43.jpg" alt="">
-    </div>
-    <div class="content">
-      <div class="header"> <h2>Король Лев</h2> </div>
-      <div class="meta">
-        <a class="text-muted">Цена за просмотр: 1099 тг </a>
-      </div>
-      <hr class="featurette-divider">
-      <div class="description">
-       <p> В африканской саванне у Короля Льва Муфасы рождается наследник Симба, которому уготован непростой путь от избалованного непоседы до изгоя, от беспечного бродяги до защитника и повелителя всех зверей.
-       </p>
-     </div>
-   </div>
-   <div class="extra content">
-    <span>
-      Смотрите на cайте <a class="text-muted" href="https://www.ivi.ru/watch/177902">ivi.ru</a>
-    </span>
-    
-  </div>
-</div>
 </div>
 </div>
 
