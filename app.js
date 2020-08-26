@@ -73,6 +73,51 @@ app.get("/study", function (req, res){
 	})
 });
 
+app.get("/food/new", function(req, res){
+    res.render("newFood");
+});
+
+app.get("/films/new", function(req, res){
+    res.render("newFilms");
+});
+
+app.get("/study/new", function(req, res){
+    res.render("newStudy");
+});
+
+
+app.post("/food", function(req , res){
+     Food.create(req.body.food, function (err , newFood){
+       if(err){
+       	console.log(err);
+       } else {
+       	res.redirect("/food");
+       }
+     });
+});
+
+app.post("/films", function(req , res){
+     Film.create(req.body.films, function (err , newFilm){
+       if(err){
+       	console.log(err);
+       } else {
+       	res.redirect("/films");
+       }
+     });
+});
+
+
+app.post("/study", function(req , res){
+     Study.create(req.body.study, function (err , newStudy){
+       if(err){
+       	console.log(err);
+       } else {
+       	res.redirect("/study");
+       }
+     });
+});
+
+
 
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
