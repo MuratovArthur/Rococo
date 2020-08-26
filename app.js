@@ -4,6 +4,8 @@ var express    = require("express"),
     bodyParser = require("body-parser"), 
     app        = express();
 
+require('dotenv').config()
+
 const AdminBro = require('admin-bro')
 const AdminBroExpress = require('@admin-bro/express')
 const AdminBroMongoose = require('@admin-bro/mongoose')
@@ -12,6 +14,9 @@ AdminBro.registerAdapter(AdminBroMongoose)
 app.use(bodyParser.json())
 app.use(express.static("public"));
 app.set("view engine", "ejs");
+
+
+
 
 var foodSchema = new mongoose.Schema({
 	image: String,
@@ -51,8 +56,8 @@ const run = async () => {
   })
 
   const ADMIN = {
-  email: 'test@example.com',
-  password: 'password',
+  email: process.env.AD_EMAIL,
+  password: process.env.AD_PASS,
 }
 
 const router = AdminBroExpress.buildAuthenticatedRouter(adminBro, {
@@ -63,7 +68,7 @@ const router = AdminBroExpress.buildAuthenticatedRouter(adminBro, {
     return null
   },
   cookieName: 'adminbro',
-  cookiePassword: 'somePassword',
+  cookiePassword: process.env.CK_PASS,
 })
 
   app.use(adminBro.options.rootPath, router)
