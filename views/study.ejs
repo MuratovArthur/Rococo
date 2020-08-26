@@ -34,114 +34,32 @@
   </header>
 
     <div class="ui four column centered grid" >
-      <div class="ui link cards">
+       <% studyCards.forEach(function(card){ %>
 
-        <div class="card">
-          <div class="image">
-            <img src="https://avatars.mds.yandex.net/get-zen_doc/235990/pub_5a5744e3a936f4411558f6ff_5a57451fad0f22c3a70625bd/scale_1200" alt="">
-          </div>
-          <div class="content">
-            <div class="header"> <h2>ЛитРес</h2> </div>
-            <div class="meta">
-              <a class="text-muted">Бесплатные книги</a>
-            </div>
-            <hr class="featurette-divider">
-            <div class="description">
-             <p>Беслатно получаем электронныне книги на ЛитРес. Переходим на сайт ЛитРес ивводим промокоды:  <span class="text-muted">  SBERSCHOOL, SECREATS, HYPEFILM20B, IVKUSNO, RABOTA. </span>
-
-             </p>
-           </div>
-         </div>
-         <div class="extra content">
-          <span >
-           Также доступны аудио версии книг
-         </span>
-         
-       </div>
-     </div>
-   </div>
-   <div class="ui link cards">
-
-
-     <div class="card">
-      <div class="image">
-        <img src="https://yt3.ggpht.com/a/AATXAJyCCfuOQUwhO9tPwHgJMqCGep5Hz2TPNh0dng=s900-c-k-c0xffffffff-no-rj-mo" alt="">
-      </div>
-      <div class="content">
-        <div class="header"> <h2> Skillbox </h2></div>
-        <div class="meta">
-          <a class="text-muted">-50% за любой курс</a>
+    <div class="ui link cards">
+      <div class="card">
+        <div class="image">
+          <img src="<%=card.image%>"  alt="">
         </div>
-        <hr class="featurette-divider">
-        <div class="description">
-          <p>Выбери курс или собери пакет курсов. Курсы по программированию, маркетингу, дизайну вы сможете приобрести с 55% выгодой, при условии использования купона  <span class="text-muted">  marafon.</span></p>
-
-
-
+        <div class="content">
+          <div class="header"> <h2><%=card.title%></h2> </div>
+          <div class="meta">
+            <p class="text-muted"><%=card.subtitle%></p>
+          </div>
+          <hr class="featurette-divider">
+          <div class="description">
+           <p> <%=card.description%> </p>
         </div>
       </div>
       <div class="extra content">
-        <span >
-          Истекает 30 сентября
+        <span>
+          <a href="<%=card.link%>" class="text-muted">Перейти на сайт</a>
         </span>
-
       </div>
     </div>
-  </div>
-  <div class="ui link cards">
-
-
-    <div class="card">
-      <div class="image">
-        <img src="https://sun9-61.userapi.com/kp7rNPiNcBa0RqysdMJUy9xgP2RqNt4BPWrWmA/rv0mzrHYIYs.jpg" alt="">
-      </div>
-      <div class="content">
-        <div class="header"><h2> Skill Factory</h2></div>
-        <div class="meta">
-          <a class="text-muted"> -35%</a>
-        </div>
-        <hr class="featurette-divider">
-        <div class="description">
-         <p> Оплачивайте всю стоимость выбранного вами курса в школе Skillfactory.ru, чтобы сэкономить 20% от его изначальной цены!</p>
-
-
-
-       </div>
-     </div>
-     <div class="extra content">
-      <span >
-        Истекает 19 сентября
-      </span>
-
     </div>
-  </div>
-</div>
-<div class="ui link cards">
 
-  <div class="card">
-    <div class="image">
-      <img src="https://edadvisor.ru/wp-content/uploads/2020/03/skidki-skillbox.png" alt="">
-    </div>
-    <div class="content">
-      <div class="header"> <h2>Skillbox</h2> </div>
-      <div class="meta">
-        <a class="text-muted">Бесплатный доступ к вебинарам </a>
-      </div>
-      <hr class="featurette-divider">
-      <div class="description">
-       <p>Подпишитесь на рассылку новостей и акций от Skillbox и получите бесплатный доступ к вебинарам! 
-         Для завершения покупки промокод не требуется. Перейдите на сайт  и посмотрите скидку
-       </p>
-     </div>
-   </div>
-   <div class="extra content">
-    <span >
-      Истекает 19 сентября
-    </span>
-
-  </div>
-</div>
-</div>
+     <% }); %>
 </div>
 <div class="footer"></div>
 </body>

@@ -34,35 +34,36 @@
   </header>
 
   <div class="ui four column centered grid">
+
+      <% filmCards.forEach(function(card){ %>
+
     <div class="ui link cards">
-
-      <% filmCards.forEach(function(filmcard){ %>
-
       <div class="card">
         <div class="image">
-          <img src="<%=filmcard.image%>"  alt="">
+          <img src="<%=card.image%>"  alt="">
         </div>
         <div class="content">
-          <div class="header"> <h2><%=filmcard.title%></h2> </div>
+          <div class="header"> <h2><%=card.title%></h2> </div>
           <div class="meta">
-            <p class="text-muted"><%=filmcard.subtitle%></p>
+            <p class="text-muted"><%=card.subtitle%></p>
           </div>
           <hr class="featurette-divider">
           <div class="description">
-           <p> <%=filmcard.description%> </p>
+           <p> <%=card.description%> </p>
         </div>
       </div>
       <div class="extra content">
         <span>
-          <a href="<%=filmcard.link%>" class="text-muted">Перейти на сайт</a>
+          <a href="<%=card.link%>" class="text-muted">Перейти на сайт</a>
         </span>
       </div>
+    </div>
     </div>
 
      <% }); %>
 
 </div>
-</div>
+
 
  <div class="footer"></div>
 </body>

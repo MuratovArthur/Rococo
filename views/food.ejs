@@ -32,10 +32,11 @@
   </header>
 
   <div class="ui four column centered grid" >
-    <div class="ui link cards">
+   
 
 <% foodCards.forEach(function(card){ %>
 
+ <div class="ui link cards">
       <div class="card">
         <div class="image">
           <img src="<%=card.image%>"  alt="">
@@ -56,10 +57,9 @@
         </span>
       </div>
     </div>
+      </div>
 
      <% }); %>
-
-  </div>
 </div>
 
 
