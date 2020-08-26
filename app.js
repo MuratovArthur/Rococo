@@ -4,8 +4,12 @@ var express    = require("express"),
     bodyParser = require("body-parser"), 
     app        = express();
 
-mongoose.connect("mongodb://localhost/rococo", {useNewUrlParser: true, useUnifiedTopology: true});
-app.use(bodyParser.urlencoded({extended: true}));
+const AdminBro = require('admin-bro')
+const AdminBroExpress = require('@admin-bro/express')
+const AdminBroMongoose = require('@admin-bro/mongoose')
+AdminBro.registerAdapter(AdminBroMongoose)    
+
+app.use(bodyParser.json())
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
@@ -38,6 +42,34 @@ var studySchema = new mongoose.Schema({
 });
 
 var Study = mongoose.model("Study", studySchema);
+
+const run = async () => {
+  const mongooseDb = await mongoose.connect('mongodb://localhost/rococo', { useNewUrlParser: true, useUnifiedTopology: true })
+
+  const adminBro = new AdminBro({
+    databases: [mongooseDb],
+  })
+
+  const ADMIN = {
+  email: 'test@example.com',
+  password: 'password',
+}
+
+const router = AdminBroExpress.buildAuthenticatedRouter(adminBro, {
+  authenticate: async (email, password) => {
+    if (ADMIN.password === password && ADMIN.email === email) {
+      return ADMIN
+    }
+    return null
+  },
+  cookieName: 'adminbro',
+  cookiePassword: 'somePassword',
+})
+
+  app.use(adminBro.options.rootPath, router)
+}
+
+run()
 
 app.get("/", function (req, res){
 	res.render("landing");
@@ -72,52 +104,6 @@ app.get("/study", function (req, res){
 		}
 	})
 });
-
-app.get("/food/new", function(req, res){
-    res.render("newFood");
-});
-
-app.get("/films/new", function(req, res){
-    res.render("newFilms");
-});
-
-app.get("/study/new", function(req, res){
-    res.render("newStudy");
-});
-
-
-app.post("/food", function(req , res){
-     Food.create(req.body.food, function (err , newFood){
-       if(err){
-       	console.log(err);
-       } else {
-       	res.redirect("/food");
-       }
-     });
-});
-
-app.post("/films", function(req , res){
-     Film.create(req.body.films, function (err , newFilm){
-       if(err){
-       	console.log(err);
-       } else {
-       	res.redirect("/films");
-       }
-     });
-});
-
-
-app.post("/study", function(req , res){
-     Study.create(req.body.study, function (err , newStudy){
-       if(err){
-       	console.log(err);
-       } else {
-       	res.redirect("/study");
-       }
-     });
-});
-
-
 
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
