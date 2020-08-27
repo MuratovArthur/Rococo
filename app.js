@@ -11,12 +11,23 @@ const AdminBroExpress = require('@admin-bro/express')
 const AdminBroMongoose = require('@admin-bro/mongoose')
 AdminBro.registerAdapter(AdminBroMongoose)    
 
-app.use(bodyParser.json())
+var urlencoded = bodyParser.urlencoded({ extended: true }) ;
+
+app.use(bodyParser.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 
+var formSchema = new mongoose.Schema({
+  name: String,
+  city: String,
+  email: String,
+  phone: String,
+  topic: String,
+  message: String
+});
 
+var Form = mongoose.model("Form", formSchema);
 
 var foodSchema = new mongoose.Schema({
 	image: String,
@@ -109,6 +120,18 @@ app.get("/study", function (req, res){
 		}
 	})
 });
+
+app.post('/', urlencoded, function (req, res){
+     Form.create(req.body.form, function (err , newForm){
+       if(err){
+        res.render("landing");
+       } else {
+        res.redirect("/");
+        console.log(req.body.form);
+       }
+     });
+});
+
 
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
