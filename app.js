@@ -68,7 +68,7 @@ var studySchema = new mongoose.Schema({
 var Study = mongoose.model("Study", studySchema);
 
 const run = async () => {
-  const mongooseDb = await mongoose.connect('mongodb://localhost/rococo', { useNewUrlParser: true, useUnifiedTopology: true })
+  const mongooseDb = await mongoose.connect(process.env.databaseURL, { useNewUrlParser: true, useUnifiedTopology: true })
 
   const adminBro = new AdminBro({
     databases: [mongooseDb],
