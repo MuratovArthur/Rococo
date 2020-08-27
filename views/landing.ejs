@@ -135,8 +135,15 @@
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="message">
     <div class="row mb-0">
+
+      <div class="col-12 message">
+        <% if(flash && flash.length > 0) { %>
+         <div class="alert alert-light"><p><%= flash %></p></div>
+       <% } %>
+      </div>
+
       <div class="col-sm-6" id="about-us">
         <h2 class="contacts-heading">Свяжитесь с нами <i class="fa fa-envelope-o" aria-hidden="true"></i></h2>
         <p class="gmail">Если при использовании нашего сайта у вас появился вопрос или возникла проблема, заполните форму обратной связи:</p>
@@ -144,7 +151,7 @@
 
       <div class="col-sm-6" id="otclick">
 
-        <form class="ui form" action="/" method="POST">
+        <form class="ui form" action="/message" method="POST">
 
           <div class="two fields">
             <div class="field">

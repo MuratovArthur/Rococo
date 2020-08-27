@@ -200,9 +200,20 @@ textarea::placeholder {
 }
 
 .row.mb-0{
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
 
+}
+.message{
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.alert-light{
+  height: 50px;
+  font-size: 20px; 
+  color: black;
+  background: #fff;
 }
 
 .btn-text{
@@ -259,6 +270,12 @@ textarea::placeholder {
 
 
 @media only screen and (max-width: 760px) {
+  .message{
+  padding-bottom: 0.5rem;
+}
+  .alert-light{
+  height: 80px;
+}
   .header-text h2{
 font-size: 6vw;
     max-width: 70%;

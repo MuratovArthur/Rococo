@@ -2,6 +2,9 @@ var express    = require("express"),
     ejs        = require('ejs'),
     mongoose   = require("mongoose"),
     bodyParser = require("body-parser"), 
+    cookieParser = require('cookie-parser');
+    session      = require('express-session');
+    flash        = require('req-flash');
     app        = express();
 
 require('dotenv').config()
@@ -16,7 +19,12 @@ var urlencoded = bodyParser.urlencoded({ extended: true }) ;
 app.use(bodyParser.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
-
+app.use(session({ 
+  secret:  process.env.CK_PASS,
+  resave: true,
+  saveUninitialized: true
+}));
+app.use(flash());
 
 var formSchema = new mongoose.Schema({
   name: String,
@@ -88,7 +96,7 @@ const router = AdminBroExpress.buildAuthenticatedRouter(adminBro, {
 run()
 
 app.get("/", function (req, res){
-	res.render("landing");
+	res.render("landing", {flash: req.flash('success') });
 });
 
 app.get("/food", function (req, res){
@@ -121,13 +129,13 @@ app.get("/study", function (req, res){
 	})
 });
 
-app.post('/', urlencoded, function (req, res){
+app.post('/message', urlencoded, function (req, res){
      Form.create(req.body.form, function (err , newForm){
        if(err){
         res.render("landing");
        } else {
-        res.redirect("/");
-        console.log(req.body.form);
+        req.flash('success', 'Спасибо! Ваше сообщение было успешно отправлено.');
+        res.redirect("/#message");
        }
      });
 });
