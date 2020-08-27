@@ -71,7 +71,6 @@ const run = async () => {
 
   const adminBro = new AdminBro({
     databases: [mongooseDb],
-    rootPath: process.env.PASS
   })
 
   const ADMIN = {
@@ -94,8 +93,6 @@ const router = AdminBroExpress.buildAuthenticatedRouter(adminBro, {
 }
 
 run()
-
-console.log()
 
 app.get("/", function (req, res){
 	res.render("landing", {flash: req.flash('success') });
