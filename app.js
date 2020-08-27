@@ -2,7 +2,6 @@ var express    = require("express"),
     ejs        = require('ejs'),
     mongoose   = require("mongoose"),
     bodyParser = require("body-parser"), 
-    cookieParser = require('cookie-parser');
     session      = require('express-session');
     flash        = require('req-flash');
     app        = express();
