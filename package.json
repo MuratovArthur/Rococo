@@ -19,7 +19,9 @@
   "homepage": "https://github.com/MuratovArthur/Rococo#readme",
   "dependencies": {
     "@admin-bro/express": "^3.0.0",
+    "@admin-bro/koa": "^1.0.0",
     "@admin-bro/mongoose": "^1.0.0",
+    "@koa/router": "^9.4.0",
     "admin-bro": "^3.0.1",
     "admin-bro-expressjs": "^2.1.1",
     "dotenv": "^8.2.0",
@@ -27,6 +29,7 @@
     "express": "^4.17.1",
     "express-formidable": "^1.2.0",
     "express-session": "^1.17.1",
+    "koa": "^2.13.0",
     "mongoose": "^5.10.0",
     "req-flash": "0.0.3"
   }
