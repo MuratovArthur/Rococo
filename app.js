@@ -4,7 +4,6 @@ var express    = require("express"),
     bodyParser = require("body-parser"), 
     session      = require('express-session'),
     flash        = require('req-flash'),
-    Koa        = require('koa'),
     app        = express();
 
 require('dotenv').config()
