@@ -25,7 +25,6 @@ app.use(session({
 }));
 app.use(flash());
 
-mongoose.connect(process.env.databaseURL, { useNewUrlParser: true, useUnifiedTopology: true })
 
 var formSchema = new mongoose.Schema({
   name: String,
