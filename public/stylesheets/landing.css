@@ -136,8 +136,14 @@ h1{
   max-width: 30vw;
   margin: 0 auto;
   font-size: 1.8vw;
+  text-decoration: none;
+  color: #000;
 }
+.lead a{
 
+  text-decoration: none;
+  color: #000;
+}
 
 .ui.secondary.button {
  width: 100%;
@@ -371,8 +377,8 @@ textarea::placeholder {
   position: absolute;
   letter-spacing: -1.8px;
   bottom: 22px;
-  max-width: 90%;
-  left: 4.8%;
+  max-width: 95%;
+  left: 1.8%;
 }
 h1{
  font-size: 3.5em;
