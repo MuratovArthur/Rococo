@@ -42,7 +42,7 @@ var foodSchema = new mongoose.Schema({
 	title: String,
 	subtitle: String,
 	description: String,
-	extra: String
+	link: String
 });
 
 var Food = mongoose.model("Food", foodSchema);
