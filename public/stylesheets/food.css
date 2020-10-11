@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&family=Montserrat:wght@200;400;500&family=Roboto&family=Yeseva+One&display=swap');
-
+body{
+  background-color: #262F34;
+}
 .navbar{
   background-color: #262F34;
   position: fixed; width:
@@ -61,11 +63,8 @@ body{
 
 
 .parallax {
-  background-image: url('../photos/food-banner.webp');
-  height: 460px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(https://png.pngtree.com/58pic/32/41/17/99E58PICgnMbiK61UbQb9_PIC2018.jpg);
+  height: 500px;
   background-size: cover;
 }
 div.ui.four.column.centered.grid {
