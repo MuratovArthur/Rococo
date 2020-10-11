@@ -60,11 +60,8 @@ body{
 
 
 .parallax {
-  background-image: url('../photos/study-banner.webp');
-  height: 460px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(/photos/Hw-bckg.webp);
+  height: 500px;
   background-size: cover;
 }
 div.ui.four.column.centered.grid {
