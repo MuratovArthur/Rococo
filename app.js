@@ -47,7 +47,7 @@ var foodSchema = new mongoose.Schema({
 
 var Food = mongoose.model("Food", foodSchema);
 
-var filmSchema = new mongoose.Schema({
+var wearSchema = new mongoose.Schema({
 	image: String,
 	title: String,
 	subtitle: String,
@@ -55,7 +55,7 @@ var filmSchema = new mongoose.Schema({
 	link: String
 });
 
-var Film = mongoose.model("Film", filmSchema);
+var Wear = mongoose.model("Wear", wearSchema);
 
 var studySchema = new mongoose.Schema({
 	image: String,
@@ -109,12 +109,12 @@ app.get("/food", function (req, res){
 	})
 });
 
-app.get("/films", function (req, res){
-  Film.find({}, function(err, filmCards){
+app.get("/wear", function (req, res){
+  Wear.find({}, function(err, wearCards){
 		if (err){
            console.log(err);
 		}else{
-            res.render("films", {filmCards: filmCards});
+            res.render("wear", {wearCards: wearCards});
 		}
 	})
 });
