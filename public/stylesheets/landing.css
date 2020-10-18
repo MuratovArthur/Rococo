@@ -190,7 +190,7 @@ h1{
   display: inline-block;
   padding-left: 2%;
 }
-.fa-television{
+.shopping.bag.icon{
   padding-left: 2%;
 }
 input::placeholder {
@@ -302,7 +302,9 @@ letter-spacing: -0.2px;
   i.fa{
     display: none;
   }
-  
+  i.shopping.bag.icon{
+    display: none;
+  }
   .btn-text{
     font-size: 5vw;
   }
