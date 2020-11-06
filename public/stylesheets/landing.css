@@ -74,13 +74,22 @@
 
 }
 .parallax {
-  background-image: url(/photos/Hw-bckg.webp);
-  height: 500px;
+  background-image: url(/photos/banner.webp);
+  height: 450px;
   background-size: cover;
+  background-position: center; 
 }
 .header-text{
  padding-top: 160px;
  text-align: center;
+}
+
+.header-text h1{
+ color: #262F34;
+}
+
+.header-text h2{
+ color: #262F34;
 }
 h1{
   font-size: 6em;
