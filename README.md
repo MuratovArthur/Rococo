@@ -5,8 +5,10 @@
 Rococo is a dynamic, user-centric website designed to aggregate and systematically display coupons and active sales, providing users with a seamless and efficient way to access the latest deals.
 
 ![Desktop View](./images/desktop.jpg)
-![Mobile View](./images/mobile.jpg)
+
 ![Admin View](./images/admin.jpg)
+
+<img src="./images/mobile.jpg" width="300" alt="Mobile View">
 
 ## Features
 
