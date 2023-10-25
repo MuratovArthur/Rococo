@@ -31,7 +31,7 @@
     "express-formidable": "^1.2.0",
     "express-session": "^1.17.3",
     "koa": "^2.13.0",
-    "mongoose": "^5.13.19",
+    "mongoose": "^5.13.21",
     "req-flash": "0.0.3"
   }
 }
